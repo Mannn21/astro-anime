@@ -1,0 +1,17 @@
+---
+interface Props {
+    title: string
+    image: string,
+    eps: number, 
+    epsUrl: string
+}
+
+const {title, image, eps, epsUrl} = Astro.props
+---
+
+<div>
+    <span>{title}</span>
+    <img src={image} alt={title}/>
+    <span>episode: {eps}</span>
+    <span>Link: <a href={epsUrl}>Disini</a></span>
+</div>
